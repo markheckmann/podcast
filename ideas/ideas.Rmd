@@ -1,0 +1,43 @@
+---
+title: "ideas"
+output: html_document
+date: "2024-10-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+## Functions
+
+### Filter, Negate, Reduce
+
+Filter numeric columns. See also Functions in *Advanced R* <https://adv-r.hadley.nz/functions.html>
+
+```{r}
+# Filter numeric columns
+ii <- sapply(iris, is.numeric)
+iris[ii]
+
+# equivalent
+Filter(is.numeric, iris)
+```
+
+
+Filter non-numeric columns
+
+```{r}
+ii <- sapply(iris, \(x) !is.numeric(x))
+iris[ii]
+
+Filter(\(x) !is.numeric(x), iris)
+```
+
+Using negate
+
+```{r}
+ii <- sapply(iris, Negate(is.numeric))
+iris[ii]
+
+Filter(Negate(is.numeric), iris)
+```
