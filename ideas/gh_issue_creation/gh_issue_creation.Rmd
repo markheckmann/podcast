@@ -1,0 +1,27 @@
+---
+title: "create an issue on github"
+output: html_document
+date: "2024-12-31"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+feat: vectorize index arg in remove_slide()
+
+Happy New Year!
+  
+  I tried to delete several slides at once from a presentation I imported and noticed that the `index` arg in `remove_slide()` is not vectorized.
+
+I suggest to make the `index` arg vectorized. Please feel free to assign the issue to me, @davidgohel, if you agree. :)
+
+``` r
+library(officer) 
+
+x <- read_pptx() |> add_slide() |> add_slide() |> add_slide()
+x <- remove_slide(x, 1) # works
+x <- remove_slide(x, 1:2) # fails => would be nice if it was possible
+#> Error in if (!between(index, 1, l_)) {: the condition has length > 1
+```
+<sup>Created on 2024-12-31 with [reprex v2.0.2](https://reprex.tidyverse.org)</sup>
