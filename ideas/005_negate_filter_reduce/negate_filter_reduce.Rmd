@@ -1,19 +1,18 @@
 ---
-title: "ideas"
+title: "Base R: Negate, Filter, Reduce"
 output: html_document
-date: "2024-10-12"
 ---
-
+  
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 ## Functions
 
-### Filter, Negate, Reduce
+## Filter, Negate, Reduce
 
 Filter numeric columns. See also Functions in *Advanced R* <https://adv-r.hadley.nz/functions.html>
-
+  
 ```{r}
 # Filter numeric columns
 ii <- sapply(iris, is.numeric)
@@ -41,3 +40,12 @@ iris[ii]
 
 Filter(Negate(is.numeric), iris)
 ```
+
+```{r}
+3:4 %in% 1:5
+!3:4 %in% 1:5
+
+`%notin%` <- Negate(`%in%`)
+3:4 %notin% 1:5  
+```
+
