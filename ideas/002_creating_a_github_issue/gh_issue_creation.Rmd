@@ -25,3 +25,4 @@ x <- remove_slide(x, 1:2) # fails => would be nice if it was possible
 #> Error in if (!between(index, 1, l_)) {: the condition has length > 1
 ```
 <sup>Created on 2024-12-31 with [reprex v2.0.2](https://reprex.tidyverse.org)</sup>
+
