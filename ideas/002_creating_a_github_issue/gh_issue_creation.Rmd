@@ -10,11 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 feat: vectorize index arg in remove_slide()
 
-Happy New Year!
-  
-  I tried to delete several slides at once from a presentation I imported and noticed that the `index` arg in `remove_slide()` is not vectorized.
+I tried to delete several slides at once from a presentation I imported and noticed that the `index` arg in `remove_slide()` is not vectorized.
 
-I suggest to make the `index` arg vectorized. Please feel free to assign the issue to me, @davidgohel, if you agree. :)
+I suggest to make the `index` arg vectorized. @davidgohel, please feel free to assign the issue to me, if you agree. :)
 
 ``` r
 library(officer) 

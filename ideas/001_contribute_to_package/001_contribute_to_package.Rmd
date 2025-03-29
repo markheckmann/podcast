@@ -1,0 +1,47 @@
+# Contributing to an R package 
+
+1. create github issue
+2. fork repo + local setup
+3. build feature
+4. add tests
+5. create pull request (PR)
+
+## Packages / programs
+
+- officer
+- reprex
+- git
+- github
+- devtools
+- roxygen2
+- testthat
+
+
+
+
+
+## Outline
+
+1. Creating a github issue
+  - What is officer
+  - Feature suggestion
+  - Contributing Guide 
+  - reprex: reproducible example
+
+2. git + github
+  - create a fork
+  - clone repo locally
+  - create a new branch
+  
+3. Build feature
+  - Coding
+  - Documentation
+  - Examples
+
+4. Add tests
+  - Create tests
+  - Check coverage
+  
+5. Create Pull Request (PR)
+  
+

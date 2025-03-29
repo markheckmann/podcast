@@ -5,6 +5,8 @@
 * Global options in R
 * on.exit / withr
 * dot-dot-dot
+* tempdir: per session folder, the same across calls (pitfall)
+  - dir.create(tempfile) => to create subfolder
 * create a function in R (beginners) (standard + anonymous)
 * create a function in R (advanced)
 * several ways to call a function in R (anonymous, infix, prefix, do.call)
@@ -62,6 +64,7 @@
 * Package conflicts & conflicted package, namespace operator
 * Everything is objects and functions
 * https://github.com/jonthegeek/factory => see README for pitfalls in function factories
+* commandArgs
 
 Series
 
