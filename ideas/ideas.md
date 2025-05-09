@@ -12,6 +12,8 @@
 * several ways to call a function in R (anonymous, infix, prefix, do.call)
 * functions all around you
 * <- vs. <<- vs. assign 
+* assignment functions `class<-` 
+  - advanced: usage in pipe mtcars |> `rownames<-`(NULL), list() |> `class<-`("my_class")
 * modifying dot dot dot “directly” possible?
 * pass by value vs reference
 * S3 classes
