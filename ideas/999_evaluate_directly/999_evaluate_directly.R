@@ -1,5 +1,11 @@
 # use case of parenthesis indirectly in code (r <- r+ 1)
 
+r <- 1
+(r <- 1)
+
+c(r <- 42, 100 ) # rarely used
+
+
 wb <- createWorkbook()
 
 sheet <- "Ausschluss"
