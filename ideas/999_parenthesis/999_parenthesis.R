@@ -28,5 +28,10 @@ print(r <- 42)     # ordinary printing
 
 withVisible(r <- 42)
 
+f <- \() {
+  l <- list()
+}
+print(f())
+withVisible(f())
 
 
