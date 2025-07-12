@@ -5,6 +5,7 @@
 * Global options in R
 * on.exit / withr
 * dot-dot-dot
+* switch takes code blocks
 * tempdir: per session folder, the same across calls (pitfall)
   - dir.create(tempfile) => to create subfolder
 * create a function in R (beginners) (standard + anonymous)
