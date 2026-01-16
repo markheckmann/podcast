@@ -72,3 +72,7 @@
 Series
 
 * Data Analysis
+
+Non-R
+
+* git worktrees: https://andrewlock.net/working-on-two-git-branches-at-once-with-git-worktree/
