@@ -42,7 +42,7 @@
 * Nice one-liners
 * What does is.na(x) <- is.na(x) do?
 * resolve order of elements by topological sorting
-* closures / function factory
+* closures / function factory + mutable closures
 * sort dataframe using base R
 * base vs. grid graphics
 * renv
